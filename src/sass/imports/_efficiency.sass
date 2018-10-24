@@ -1,0 +1,244 @@
+.countries
+	color: #2c2f35
+	font-size: 44px
+	font-weight: 900
+	line-height: 1.45
+	margin-bottom: 10px
+	+r(767)
+		font-size: 26px
+
+.efficiency-sertificates
+	max-width: 760px
+	.section__title h2
+		text-align: left
+	.section__title .section__undertitle
+		text-align: left
+	h2
+		color: #2c2f35
+		font-size: 58px
+		font-weight: 900
+		line-height: 1
+		+r(767)
+			font-size: 30px
+	p
+		font-weight: 300
+		line-height: 1.1
+		font-size: 30px
+		color: #4c597f
+		margin: 15px 0 10px
+		+r(767)
+			font-size: 20px
+.efficiency
+	padding: 110px 0
+.country-sertificates__item
+	width: 190px
+	height: 249px
+	border-radius: 16px
+	background-color: #f0f1f7
+	position: relative
+	text-align: center
+	padding-top: 25px
+	color: #4b587f
+
+	font-size: 22px
+	font-weight: 300
+	line-height: 24px
+	img
+		position: absolute
+		+center(h)
+		bottom: -20px
+.country-sertificates
+	display: flex
+	align-items: center
+	justify-content: space-around
+	margin-top: 40px
+
+.efficiency__results__item-text
+	color: #2c2f35
+	font-size: 18px
+	font-weight: 900
+	line-height: 1.2
+	min-height: 65px
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-bottom: 33px
+.efficiency__results
+	display: flex
+	margin-top: 110px
+	justify-content: space-between
+.efficiency__results__item-number
+	color: #404b6a
+	font-size: 80px
+	font-style: italic
+	font-family: 'PT Serif', serif
+	line-height: 1
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 7px
+		height: 10px
+		width: 100%
+		background-color: #fff
+		opacity: 0.5
+	.percent
+		font-size: 60px
+.low
+	background: url(../img/eff-low.png) no-repeat right bottom
+	&:before
+		height: 20px
+.medium
+	background: url(../img/eff-medium.png) no-repeat right 27px bottom
+	&:before
+		height: 17px
+.hard
+	background: url(../img/eff-hard.png) no-repeat right bottom
+	&:before
+		height: 13px
+.hardcore
+	background: url(../img/eff-hardcore.png) no-repeat right 20px bottom
+.efficiency-inner
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+.woh
+	border-radius: 16px
+	border: 1px solid #e5e6f0
+	background-color: #f0f1f7
+	max-width: 370px
+	margin-bottom: 60px
+	margin-top: 3px
+	&__logo
+		background-color: #fff
+		color: #018dcc
+		font-size: 22px
+		font-weight: 900
+		line-height: 1.2
+		padding: 42px 30px 46px 156px
+		border-top-left-radius: 16px
+		border-top-right-radius: 16px
+		background: url(../img/woh-logo.png) no-repeat left 30px top 30px
+
+@lost gutter 60px
+@lost flexbox flex
+@lost cycle none
+@lost clearing left
+@lost rounder 100
+@lost --beta-direction rtl
+
+.signature__title
+	color: #4c597f
+	font-size: 20px
+	font-weight: 700
+	line-height: 1.2
+	max-width: 300px
+	margin: 2.2em auto 2.1em
+.signature__wrap
+	lost-flex-container: row
+	.signa
+		lost-column: 1/2 4 0px
+		display: flex
+		align-items: center
+		justify-content: center
+		min-height: 66px
+		border-bottom: 1px solid  #e5e6f0
+		&:nth-child(odd)
+			border-right: 1px solid  #e5e6f0
+.woh__img
+	img
+		display: block
+		margin: 0 auto
+		max-width: 100%
+
+
+
++r(1200)
+	.efficiency-sertificates
+		h2
+			font-size: 48px
+		p
+			font-size: 26px
+			margin: 5px 0
+
+	.countries
+		font-size: 37px
+	.country-sertificates
+		margin-top: 20px
+	.efficiency__results
+		margin-top: 70px
+	.efficiency__results__item-text
+		font-size: 16px
+		min-height: 55px
+	.woh__logo
+		padding-top: 30px
+		margin-bottom: 30px
+		background-position: 30px 20px
+		font-size: 18px
+	.signature__title
+		font-size: 17px
+		max-width: 270px
+		margin: 1.3em auto 1.3em
+	.woh
+		margin-bottom: 25px
+
++r(1023)
+	.efficiency-inner
+		flex-direction: column
+		align-items: center
+	.efficiency-sertificates
+		max-width: 100%
+		width: 100%
+		h2
+			text-align: center
+			font-size: 40px
+		p
+			text-align: center
+
+		.countries
+			text-align: center
+		img
+			display: block
+			margin: 0 auto
+	.efficiency__results
+		justify-content: space-around
+	.woh
+		margin-top: 30px
+	.woh-wrap
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-around
+
+
++r(767)
+	.country-sertificates
+		flex-wrap: wrap
+	.country-sertificates__item
+		margin: 0 10px 45px
+	.efficiency__results
+		margin-top: 20px
+		flex-wrap: wrap
+		&__item
+			width: 50%
+			margin-bottom: 30px
+	.efficiency__results__item-number
+		max-width: 130px
+		margin: 0 auto
+	.medium, .hardcore
+		background-position: right bottom
+	.efficiency__results__item-text
+		margin-bottom: 10px
+	.woh-wrap
+		flex-direction: column-reverse
++r(479)
+	.efficiency__results__item-text
+		font-size: 15px
+	.woh
+		max-width: 310px
+	.woh__logo
+		font-size: 16px
+	.signature__title
+		font-size: 16px
+
