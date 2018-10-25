@@ -1,0 +1,100 @@
+.ded
+	padding: 100px 0
+	color: #4b587f
+	background: #fff url(../img/ded-img__bg.png) no-repeat 
+	background-position: 88% 0
+	&-box
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+	&-content
+		p
+			margin-bottom: 15px
+			font-size: 17px
+			line-height: 1.5
+		p:last-child
+			margin-bottom: 0
+		.another
+			color: #2c2f35
+			font-weight: 500
+			display: initial
+	&-img
+		flex: none
+		max-width: 406px
+		margin-left: 4px
+		text-align: center
+		position: relative
+		z-index: 2
+		img
+			margin-top: -25px
+			margin-bottom: 15px
+			margin-left: 8px
+		&__title
+			color: #2c2f35
+			font-size: 22px
+			line-height: 1.1
+			font-weight: 900
+			margin-bottom: 5px
+			margin-left: 35px
+			.smaller
+				font-size: 17px
+				font-weight: 400
+		&__descr
+			display: block
+			color: #f78c26
+			font-size: 17px
+			line-height: 1.1
+			font-style: italic
+			margin-left: 35px
+	&-title
+		font-size: 32px
+		line-height: 1.1
+		color: #2c2f35
+		font-weight: 900
+		margin-bottom: 35px
+	p.ded-slogan
+		font-size: 20px
+		line-height: 1.1
+		margin-bottom: 37px
+		color: #2c2f35
+		font-weight: 900
+
++r(1199)
+	.ded
+		&-title
+			font-size: 27px
+			margin-bottom: 15px
+		p.ded-slogan
+			margin-bottom: 15px
+		&-content p
+			margin-bottom: 10px
+
++r(991)
+	.ded
+		&-box
+			align-items: flex-end
+		&-img
+			max-width: 300px
+		&-title
+			font-size: 22px
+		p.ded-slogan
+			font-size: 19px
+
++r(767)
+	.ded
+		background-position: center
+		&-box
+			flex-direction: column
+			justify-content: center
+		&-img
+			margin: 20px auto 0
+			img
+				margin: 0
+		&-title
+			font-size: 21px
+
++r(479)
+	.ded
+		text-align: center

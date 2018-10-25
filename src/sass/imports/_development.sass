@@ -1,0 +1,147 @@
+.development 
+  padding: 100px 0
+  .section__title 
+    .section__undertitle
+      margin-top: 0
+
+.development .biger
+  color: #f9da63
+  font-weight: 900
+  font-size: 66px
+  line-height: 1.1
+
+.development-wrap
+  display: flex
+  margin: 50px -10px 0
+  margin-bottom: 50px
+  justify-content: space-between
+
+.development-wrap__item
+  width: 33%
+  padding: 0 10px
+
+.development-wrap__img
+  margin-bottom: 30px
+  img
+    width: 100%
+
+.development-wrap__title
+  margin-bottom: 25px
+  position: relative
+  z-index: 1
+  color: #2c2f35
+  font-family: Roboto
+  font-size: 24px
+  line-height: 1.1
+  font-weight: 700
+  &:before
+    position: absolute
+    content: ""
+    background-image: url(../img/line-minigrey.png)
+    background-size: 150px
+    background-repeat: no-repeat
+    background-position: left
+    width: 100%
+    height: 35px
+    left: 0
+    top: 0
+    z-index: -1
+
+.development-wrap__item:nth-child(2) .development-wrap__title:before
+  left: -20px
+
+.development-wrap__text
+  color: #7e8294
+
+.development-footer__text
+  text-align: center
+  color: #2c2f35
+  font-size: 32px
+  font-weight: 900
+  line-height: 1.1
+  margin-top: 50px
+  .smaller
+    display: block
+    font-size: 22px
+    line-height: 1.1
++r(1199)
+  .development-wrap__title 
+    font-size: 20px
+
++r(1023)
+  .development .biger
+    font-size: 50px
+
+  .development-wrap
+    margin: 50px -5px
+    &__item
+      padding: 0 5px
+      &:nth-child(2) 
+        .development-wrap__title:before
+          left: 0
+
++r(991)
+  .development-wrap
+    &__title
+      height: 44px
+
+  .development-wrap__img
+    margin-bottom: 15px
+
+  .development-wrap__title
+    margin-bottom: 10px
+
+  .development-wrap__text br
+    display: none
+
+  .development-footer__text
+    font-size: 25px
+    .smaller
+      font-size: 20px
+
+
++r(767)
+  .development-wrap
+    flex-wrap: wrap
+    justify-content: flex-start
+    margin: 20px -5px
+    &__title
+      height: auto
+
+  .development-wrap__item
+    width: 51%
+    margin-bottom: 20px
+    &:nth-child(2)
+      margin-left: auto
+    &:last-child
+      margin-bottom: 0
+
+  .development-footer__text
+    font-size: 20px
+    margin-top: 20px
+    .smaller
+      font-size: 17px
+
++r(639)
+  .development
+    text-align: center
+    &-footer__text 
+      .smaller
+        display: initial
+    .section__title 
+      .section__undertitle br
+        display: none
+
+  .development-wrap
+    justify-content: center
+
+  .development-wrap__item
+    &:nth-child(2)
+      margin: 0 auto 20px
+    width: 100%
+    max-width: 480px
+    margin-bottom: 20px
+
+  .development-wrap__title:before
+    background-position: center
+

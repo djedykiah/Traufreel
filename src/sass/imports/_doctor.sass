@@ -1,0 +1,152 @@
+.doctor
+	padding: 100px 0
+	&-box
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+	&-img
+		z-index: 2
+		flex: none
+		max-width: 355px
+		padding-left: 5px
+		margin: 90px 22px 0 0
+		position: relative
+		img
+			margin-bottom: 23px
+		&__bg
+			position: absolute
+			top: -50px
+			left: -25px
+			max-width: initial
+			z-index: -1
+		&__title
+			color: #2c2f35
+			font-size: 22px
+			line-height: 1.2
+			font-weight: 900
+			margin-bottom: 13px
+			padding-left: 40px
+			span
+				display: block
+				color: #f78c26
+				font-size: 17px
+				font-style: italic
+				font-weight: 500
+		&__descr
+			color: #7e8294
+			font-size: 17px
+			line-height: 1.1
+			padding-left: 40px
+			span
+				color: #2c2f35
+				font-family: "Roboto - Bold"
+				font-weight: 700
+	&-content
+		min-width: 835px
+		&__title
+			color: #2c2f35
+			font-size: 58px
+			line-height: 1.1
+			font-weight: 900
+			margin-bottom: 25px
+		&__slogan
+			color: #2c2f35
+			font-size: 32px
+			line-height: 1.1
+			font-weight: 900
+			margin-bottom: 20px
+		&__descr
+			color: #2c2f35
+			font-size: 18px
+			line-height: 1.1
+			margin-bottom: 25px
+			span
+				font-weight: 900
+		.text
+			color: #4b587f
+			margin-bottom: 5px
+			line-height: 1.7
+			letter-spacing: 0.5px
+			position: relative
+			z-index: 2
+		.another
+			display: initial
+			color: #2c2f35
+			font-weight: 500
+			line-height: 26px
+			line-height: 1.1
+	.doctor-signature 
+		img
+			margin-left: auto
+
++r(1299)
+	.doctor
+		&-content
+			min-width: auto
+		&-img
+				margin-right: 10px
+				&__bg
+					left: 0
+
++r(1199)
+	.doctor
+		&-box
+			align-items: flex-end
+		&-img
+			max-width: 300px
+			margin: 0 10px 60px 0
+			&__bg
+				max-width: 100%
+		&-content
+			&__descr
+				font-size: 16px
+				margin-bottom: 20px
+			.text
+				letter-spacing: 0
+				line-height: 1.5
+			&__title
+				margin-bottom: 15px
+		
++r(991)
+	.doctor
+		&-img
+			max-width: 260px
+			text-align: center
+			&__title
+				padding-left: 0
+			&__descr
+				padding-left: 0
+		&-content
+			&__title
+				font-size: 40px
+				margin-bottom: 5px
+			&__slogan
+				font-size: 20px
+				margin-bottom: 10px
+			&__descr
+				margin-bottom: 10px
+
++r(767)
+	.doctor
+		&-box
+			flex-direction: column
+		&-img
+			order: 1
+			margin: 50px auto 0
+			img
+				margin-bottom: 5px
+			&__title
+				margin-bottom: 5px
+
++r(479)
+	.doctor
+		text-align: center
+		&-content
+			&__title
+				font-size: 30px
+			&__slogan
+				font-size: 18px
+		.doctor-signature img
+			margin: 0 auto

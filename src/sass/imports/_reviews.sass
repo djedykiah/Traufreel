@@ -1,0 +1,329 @@
+.for-reviews-slick__next,
+.for-reviews-slick__prev
+	position: absolute
+	top: 50%
+	transform: translate(0, -50%)
+	right: -20px
+	width: 44px
+	height: 44px
+	overflow: hidden
+	position: absolute
+	z-index: 5
+	background: #fff
+	&:before
+		content: ""
+		position: absolute
+		right: 0
+		top: 50%
+		margin-top: -16px
+		border-right: 1px solid rgba(216,221,228,.45)
+		height: 32px
+
+.for-reviews-slick__prev
+	right: inherit
+	left: -20px
+	&:before
+		left: 0
+		right: inherit
+		border-left: 1px solid rgba(216,221,228,.45)
+.reviews
+	&-slick__prev,
+	&-slick__next
+		width: 28px
+		height: 28px
+		right: -29px !important
+		top: 50%
+		margin-top: -14px
+		background: #fff
+		transform: rotate(45deg)
+		position: absolute
+		cursor: pointer
+		z-index: 2
+		box-shadow: 0 0 0px 1px rgba(216,221,228,.45)
+		&:after
+			content: ""
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 7px 0 7px 8px
+			border-color: transparent transparent transparent #c7cde1
+			position: absolute
+			top: -1px
+			left: 18px
+			transform: rotate(-45deg)
+		&:hover
+			&:after
+				border-color: transparent transparent transparent #f78c26		
+	&-slick__prev
+		right: inherit
+		left: -29px !important
+		&:after
+			left: 2px
+			top: 15px
+			transform: rotate(135deg)
+	.slick-dots
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		position: absolute
+		left: 50%
+		transform: translate(-50%, 0)
+		bottom: -45px
+		li
+			margin: 0 5px
+			width: 10px
+			height: 10px
+			border: 1px solid #c7cde1
+			background-color: #eef1f6
+			text-indent: -9999px
+			border-radius: 50%
+			cursor: pointer
+			&.slick-active
+				border-color: #f78c26
+				background-color: #f78c26
+	&-button__box
+		text-align: center
+	&-slider
+		z-index: 7
+		&__box
+			margin-top: 50px
+			position: relative
+		&__item
+			border: 1px solid #e7eaf0
+			border-radius: 16px
+			background-color: #f0f1f7
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			min-height: 350px
+		&__item2,
+		.reviews-slider__item3,
+		.reviews-slider__item7 
+			.reviews-button__box
+				display: none
+			.reviews-slider__text
+				&:after
+					display: none
+		&__img
+			width: 370px
+			padding: 30px
+			background-color: #f9faff
+			border-radius: 16px 0 0 16px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			justify-content: center
+			flex: none
+			.main-img
+				border: 3px solid #c4c9de
+				border-radius: 50%
+				max-width: 214px
+				margin: 0 auto
+			.text__img
+				margin: 0
+				position: absolute
+				left: 50%
+				transform: translate(-50%, 0)
+				z-index: -1
+				top: 5px
+			&.double-img
+				width: 470px
+				.double-img__item:nth-child(2)
+					margin-left: -30px
+				.text
+					margin-top: 25px
+					color: #000000
+					font-size: 20px
+					line-height: 1.2
+					font-weight: 500
+					position: relative
+					z-index: 2
+			.double-img__item
+				text-align: center
+		&__info
+			margin-bottom: 25px
+		&__name
+			color: #2c2f35
+			font-size: 18px
+			line-height: 1.1
+			font-weight: 900
+			span
+				color: #4b587f
+				font-size: 14px
+				font-weight: 400
+		&__city
+			display: block
+			color: #f78c26
+			font-size: 16px
+			line-height: 1.1
+			font-style: italic
+		&__title
+			color: #2c2f35
+			font-size: 24px
+			line-height: 1.1
+			margin-bottom: 10px
+		&__text
+			height: 171px
+			overflow: hidden
+			position: relative
+			color: #4b587f
+			font-size: 17px
+			line-height: 1.5
+			&:after
+				content: ""
+				position: absolute
+				left: 0
+				bottom: -3px
+				width: 100%
+				height: 86px
+				background-image: linear-gradient(to top, #f0f1f7 10%, rgba(240, 241, 247, 0.83) 25%, rgba(240, 241, 247, 0) 100%)
+		&__button
+			cursor: pointer
+			border-bottom: 1px dotted #ee741a
+		&__active
+			.reviews-slider__text
+				height: auto
+				&:after
+					display: none !important
+			.reviews-button__box
+				margin-top: 10px
+		&__content
+			padding: 25px 30px
+
++r(1299)
+	.for-reviews-slick__prev
+		left: 15px
+	.for-reviews-slick__next
+		right: 15px
+	.reviews-slick__prev
+		left: 5px !important
+	.reviews-slick__next
+		right: 5px !important
+	.reviews
+		&-slider__box
+			padding: 0 25px
+		&-slider__img
+			// width: auto
+			&.double-img
+				// width: auto
+		&-slick__prev
+			left: 0
+		&-slick__next
+			right: 0
+		&-slider__title
+			font-size: 21px
+
++r(1199)
+	.reviews
+		&-slider
+			.reviews-slider__item3,
+			.reviews-slider__item7
+				.reviews-button__box
+					display: block 
+				.reviews-slider__text
+					&:after
+						display: block 
+			&__content
+				br
+					display: none
+
++r(1023)
+	.reviews
+		&-slider
+			.reviews-slider__item2
+				.reviews-button__box
+					display: block 
+				.reviews-slider__text
+					&:after
+						display: block
+			&__content
+				padding: 30px 20px 
+			&__title
+				font-size: 19px
+		.reviews-slider__img
+				width: 45%
+
++r(991)
+	.reviews
+		&-slider__item
+			flex-direction: column
+		.reviews-slider__img
+			width: auto
+			border-radius: 16px 16px 0 0
+			padding: 10px
+			min-height: 280px
+		&-slider__text
+			height: 80px
+		.slick-dots
+			bottom: -35px
+
++r(767)
+	.reviews
+		&-slider
+			&__img
+				&.double-img 
+					.text
+						margin-top: 10px
+		.slick-dots
+			bottom: -25px
+
++r(639)
+	.reviews
+		&-slider
+			&__img 
+				.main-img
+					max-width: 200px
+			&__content
+				padding: 10px
+				text-align: center
+			&__info
+				margin-bottom: 10px
+			&__title
+				font-size: 16px
+		.slick-dots
+			bottom: -25px
+
++r(479)
+	.for-reviews-slick__prev,
+	.for-reviews-slick__next
+		z-index: 10
+		background-color: #f0f1f7
+		top: 230px
+		left: 20px
+		width: 25px
+	.for-reviews-slick__next
+		left: inherit
+		right: 20px
+	.reviews-slick__next, 
+	.reviews-slick__prev
+		z-index: 8
+		top: 230px
+	.reviews-slick__prev
+		left: 10px !important
+	.reviews-slick__next
+		right: 10px !important
+	.reviews
+		&-slider
+			&__box
+				padding: 0
+			&__img
+				.main-img
+					max-width: 140px
+				&.double-img 
+					.double-img__item:nth-child(2)
+						margin-left: 5px
+			&__content
+				min-height: 220px
+		.reviews-slider__img
+			min-height: 200px
+		.slick-dots
+			bottom: -25px
+		.section__title h2 br
+			display: none

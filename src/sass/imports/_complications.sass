@@ -1,2 +1,142 @@
-.complications
-	padding-top: 50px
+.section-grey
+  position: relative
+  background-color: #f0f1f7
+  &:before, &:after
+    background-image: url("../img/section-grey__before.png")
+    background-repeat: no-repeat
+    content: ""
+    position: absolute
+    height: 100px
+    width: 100%
+    left: 0
+  &:before
+    top: -35px
+  &:after
+    background-image: url("../img/section-grey__after.png")
+    bottom: -60px
+
+.complications 
+	padding: 100px 0
+
+.complications-wrap
+  display: flex
+  margin: 0 -10px
+  margin-top: 50px
+
+.complications-wrap__item
+  width: 25%
+  padding: 0 10px
+  text-align: center
+
+.complications-wrap__img
+  border-radius: 50%
+  background-color: #fff
+  margin: 0 auto 35px
+  height: 270px
+  width: 270px
+  img
+    width: 255px
+    height: 255px
+
+.complications-wrap__item
+  &:nth-child(1) .complications-wrap__img
+    background: #fff url("../img/complications-wrap1.png") no-repeat center
+  &:nth-child(2) .complications-wrap__img
+    background: #fff url("../img/complications-wrap2.png") no-repeat center
+  &:nth-child(3) .complications-wrap__img
+    background: #fff url("../img/complications-wrap3.png") no-repeat center
+  &:nth-child(4) .complications-wrap__img
+    background: #fff url("../img/complications-wrap4.png") no-repeat center
+
+.complications-wrap__title
+  color: #2c2f35
+  font-weight: 900
+  font-size: 24px
+  line-height: 1.1
+  height: 55px
+  margin: 0 0 10px
+  position: relative
+  z-index: 1
+  &:before
+    position: absolute
+    content: ""
+    background-image: url("../img/line-white.png")
+    background-size: 150px
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+    height: 20px
+    left: 0
+    top: 15px
+    transform: rotate(-3deg)
+    z-index: -1
+
+.complications-wrap__item
+	&:nth-child(3) .complications-wrap__title:before, &:nth-child(4) .complications-wrap__title:before
+    top: 20px
+
+.complications-wrap__text 
+  font-size: 18px
+  line-height: 1.3
+  padding: 0 8px
+  color: #7e8294
+
+.complications-wrap__colortext
+  color: #4c597f
+  font-weight: 500
+  display: initial
+
++r(1199)
+  .complications-wrap__text 
+    padding: 0
+    font-size: 16px
+
+  .complications-wrap__img 
+    width: 225px
+    height: 225px
+    margin: 0 auto 35px
+
++r(1023)
+  section.section-grey
+    padding: 60px 0
+
++r(991)
+	.complications-wrap
+		flex-wrap: wrap
+		justify-content: center
+		justify-content: center
+
+	.complications-wrap__item
+	  width: 50%
+	  margin-bottom: 30px
+	  &:nth-child(3), &:nth-child(4)
+	    margin-bottom: 0
+
+	.complications-wrap__title
+	  height: auto
+	  margin-bottom: 10px
+
+	.complications-wrap__img
+	  margin: 0 auto 5px
+
+	.complications-wrap__text p
+	  max-width: 225px
+	  margin: 0 auto
+
++r(767)
+  section.section-grey
+    padding: 60px 0
+
+  .complications-wrap
+    margin-top: 15px
+
++r(639)
+  .complications-wrap__img 
+    width: 200px
+    height: 200px
+
++r(479)
+	.complications-wrap__item
+		width: 100%
+		&:nth-child(3)
+		  margin-bottom: 30px 
