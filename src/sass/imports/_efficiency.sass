@@ -121,12 +121,7 @@
 		border-top-right-radius: 16px
 		background: url(../img/woh-logo.png) no-repeat left 30px top 30px
 
-@lost gutter 60px
-@lost flexbox flex
-@lost cycle none
-@lost clearing left
-@lost rounder 100
-@lost --beta-direction rtl
+
 
 .signature__title
 	color: #4c597f
@@ -146,6 +141,11 @@
 		border-bottom: 1px solid  #e5e6f0
 		&:nth-child(odd)
 			border-right: 1px solid  #e5e6f0
+		&:last-child
+			border-bottom: 0
+		&:nth-last-child(2)
+			border-bottom: 0
+
 .woh__img
 	img
 		display: block
@@ -205,6 +205,7 @@
 		justify-content: space-around
 	.woh
 		margin-top: 30px
+		margin-bottom: 0
 	.woh-wrap
 		width: 100%
 		display: flex

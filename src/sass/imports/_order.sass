@@ -1,0 +1,115 @@
+.order-inner
+	lost-flex-container: row
+	position: relative
+	margin-top: 50px
+.order
+	padding-top: 90px
+	padding-bottom: 120px
+	&__item
+		lost-column: 1/3 3 90px
+		text-align: center
+		+r(1023)
+			lost-column: 1/3 3 15px
+
+	&__img
+		width: 270px
+		height: 270px
+		border: 6px solid #d8dae5
+		background-color: #ffffff
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 70px
+		margin: 0 auto
+		position: relative
+		img
+			display: block
+			max-width: 100%
+	&__title
+		color: #2a2a2a
+		font-weight: 900
+		font-size: 22px
+		line-height: 1.36
+		margin-bottom: 0.5em
+	&__text
+		color: #4b587f
+		font-size: 17px
+		font-weight: 400
+		line-height: 1.3
+	.tri
+
+		position: absolute
+		+center(v)
+		right: -100px
+		width: 30px
+		height: 52px
+		background: url(../img/tri.svg) no-repeat
+	.form
+		box-shadow: none
+		background: none
+		padding: 0
+		max-width: 185px
+		.input
+			height: 47px
+			padding-left: 46px
+			input
+				font-size: 11px
+		&:after
+			display: none
+		.input__name:before, .input__phone:before
+			left: 13px
+	.order_btn
+		height: 53px
+		font-size: 24px
+		margin-bottom: 0
+		span
+			font-size: 12px
+
+
+
++r(1200)
+
+	.order-inner
+		max-width: 1010px
+		margin-left: auto
+		margin-right: auto
+		margin-top: 30px
+	.order .tri
+		right: -75px
+	.order__img
+		margin-bottom: 40px
+	.order__title
+		font-size: 20px
+	.order__text
+		font-size: 16px
+
++r(1023)
+	.order-inner
+
+		justify-content: space-around
+	.order__img
+		width: 220px
+		height: 220px
+		margin-bottom: 20px
+		img
+			max-width: 170px
+			position: relative
+			top: 4px
+	.order .form
+		max-width: 150px
+		.input
+			margin-bottom: 6px
+	.tri
+		display: none
+	.order__title
+		font-size: 18px
++r(767)
+	.order-inner
+		max-width: 270px
+		.order__item
+			lost-column: 1/1 3 0
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0
+
