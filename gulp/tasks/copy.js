@@ -18,6 +18,11 @@ gulp.task('copy:lib', function () {
         .src(config.src.lib + '/**/*.*')
         .pipe(gulp.dest(config.dest.lib));
 });
+gulp.task('copy:audio', function () {
+  return gulp
+      .src(config.src.audio + '/**/*.*')
+      .pipe(gulp.dest(config.dest.audio));
+});
 
 gulp.task('copy:rootfiles', function () {
     return gulp
@@ -36,6 +41,7 @@ gulp.task('copy:img', function () {
 
 gulp.task('copy', [
     'copy:img',
+    'copy:audio',
     // 'copy:rootfiles',
     // 'copy:lib',
     // 'copy:data',

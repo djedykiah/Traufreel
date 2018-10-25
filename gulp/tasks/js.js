@@ -12,7 +12,7 @@ gulp.task('js', function () {
         .pipe(include())
         // .on('error', function(){notify("Javascript include error");})
         //.pipe(uglify())
-        .pipe(babel())
+        // .pipe(babel())
         .pipe(gulp.dest(config.dest.js+'/'))
         .pipe(reload({stream: true}));
 });

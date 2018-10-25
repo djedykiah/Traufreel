@@ -1,0 +1,342 @@
+.audio-reviews-item
+	margin-bottom: 10px
+	position: relative
+	max-width: 377px
+	border-radius: 60px
+
+	height: 65px
+	&.active
+		.audio-reviews-title
+			color: #4b587f
+.audiojs
+	overflow: visible!important
+	.play-pause
+		position: absolute
+		top: 9px
+		left: 23px
+	.scrubber
+		position: absolute
+		top: 13px
+		left: 70px
+		max-width: 184px
+
+.audio-reviews-title
+	position: absolute
+	bottom: -15px
+	left: 30px
+	color: #999da9
+	font-size: 14px
+	font-weight: 400
+	line-height: 42px
+
+
+.audiojs
+	.time
+		border: none
+	.loaded
+		background: #bfdef3
+	.progress
+		background: #4faaca
+
+
+.audio-descrip
+	margin-bottom: 30px
+
+.audiojs
+	max-width: 377px
+	height: 100px
+	background-color: transparent
+	-webkit-box-shadow: none
+	box-shadow: none
+	background-repeat: no-repeat
+	background-position: center top
+	*
+		border-width: 0
+	.play-pause
+		border: none !important
+
+.loaded, .play-pause, .progress
+	background-color: transparent
+
+.scrubber
+	background-color: transparent
+	position: absolute
+	bottom: -33px !important
+	width: 100%
+	background-color: #d4eef5 !important
+	height: 2px !important
+	margin: 10px 0 0 !important
+
+.audiojs .scrubber
+	border: none !important
+
+.loaded, .progress
+	width: 100%
+	height: 2px !important
+	background-color: #474747
+
+.play-pause
+	width: 20px
+	height: 20px
+	position: absolute
+	top: 20px
+	left: 5px
+	.loading, .pause, .play
+		background-position: 0 0
+		background-image: url(../img/play.svg)
+		background-repeat: no-repeat
+		background-position: left top 7px
+	.pause
+		background-image: url(../img/pause.svg)
+
+.audio-wrap .time
+	display: block
+	float: none
+	position: absolute
+	top: 25px
+	right: 33px
+	padding: 0
+	font-size: 13px
+	color: #666666
+
+.audiojs .time em
+	color: #666666
+
+.audio-reviews-item
+	margin: 0 12px
+
+.audiojs .scrubber
+	background: #bfdef3 !important
+.riviews-audio .audio-reviews-item .audiojs
+	height: 41px
+	max-width: 365px
+	.play-pause
+		width: 30px
+		height: 39px
+		top: 3px
+		left: 0
+		padding: 4px 0
+	.scrubber
+		top: 17px
+		background: #d3d3d3 !important
+		left: 30px
+		max-width: 154px
+
+
+
+
+
+	.time
+		float: right
+		line-height: normal
+		text-shadow: none
+		font-size: 13px
+		color: #666
+		margin-top: 21px
+		position: relative
+		right: -14px
+
+	.progress
+		background: #fd7532
+
+	.loaded
+		background: #d3d3d3
+
+
+.lying
+	background-color: #f0f1f7
+	padding-top: 110px
+	padding-bottom: 130px
+.audio-reviews-items
+	margin-top: 50px
+	lost-flex-container: row
+
+.audio-reviews-item
+	lost-column: 1/4 1 30px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: -15px
+		left: 30px
+		width: 154px
+		height: 88px
+		background: url(../img/audio-bg.png)
+
+.youtuben
+	display: flex
+	justify-content: space-between
+
+
+
+.video-title
+	margin-bottom: 30px
+
+.youtuben h6
+	text-align: center
+
+
+.youtube
+	border-radius: 4px
+	background-color: #000
+	max-width: 100%
+	overflow: hidden
+	position: relative
+	cursor: pointer
+
+.video__item iframe
+	border: none
+	box-sizing: border-box
+
+.youtube .thumb
+	bottom: 0
+	opacity: 1
+	display: block
+	left: 0
+	margin: auto
+	max-width: 100%
+	position: absolute
+	right: 0
+	top: 0
+	width: 100%
+	height: 100%
+
+.video__item
+	border-radius: 4px
+	box-shadow: 0 15px 24px rgba(188, 216, 227, 0.53)
+	height: 229px
+	position: relative
+	max-width: 270px
+
+
+.youtube .play
+	filter: alpha(opacity = 90)
+	width: 80px
+	height: 80px
+	border-radius: 50%
+	background: url(../img/video-play.svg) (center / 50px) no-repeat
+
+	position: absolute
+	z-index: 2
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+
+.video__name
+	font-family: Arial, sans-serif
+	font-size: 18px
+	margin-bottom: 10px
+
+.video-wrap iframe
+	border: none
+.youtube
+	min-height: 100%!important
+
+.video-reviews
+	display: flex
+	justify-content: center
+.vivideo
+	margin: 0 15px
+.video__reviews
+	margin-top: 100px
+
+
+.video__item1
+	z-index: 2
+	&:before
+		size: 253px 55px
+		content: ''
+		position: absolute
+		top: -44px
+		+center(h)
+		background: url(../img/audio-item-before1.png) no-repeat
+		z-index: -1
+	&:after
+		size: 253px 55px
+		content: ''
+		position: absolute
+		bottom: -44px
+
+		background: url(../img/audio-item-before1.png) no-repeat
+		transform: scale(1,-1)
+		z-index: -1
+.video__item2
+	z-index: 2
+	&:before
+		size: 253px 55px
+		content: ''
+		position: absolute
+		top: -40px
+		+center(h)
+		background: url(../img/audio-item-before2.png) no-repeat
+		z-index: -1
+
+
+	&:after
+		size: 253px 55px
+		content: ''
+		position: absolute
+		bottom: -40px
+
+		background: url(../img/audio-item-before2.png) no-repeat
+		transform: scale(-1,-1)
+		z-index: -1
+
+
+.video__item3
+	z-index: 2
+	&:before
+		size: 253px 55px
+		content: ''
+		position: absolute
+		top: -34px
+		+center(h)
+		background: url(../img/audio-item-before3.png) no-repeat
+		z-index: -1
+	&:after
+		size: 253px 55px
+		content: ''
+		position: absolute
+		bottom: -34px
+
+		background: url(../img/audio-item-before3.png) no-repeat
+		transform: scale(-1,-1)
+		z-index: -1
+
++r(1200)
+	.audio-reviews-items
+		max-width: 700px
+		margin-left: auto
+		margin-right: auto
+	.audio-reviews-item
+		lost-column: 1/2 2 30px
+		margin-bottom: 30px
+		&:before
+			width: 184px
+	.riviews-audio .audio-reviews-item .audiojs .scrubber
+		max-width: 184px
+
+	.riviews-audio .audio-reviews-item .audiojs .time
+		right: 0
+	.vivideo
+		margin-bottom: 70px
+		&:last-child
+			margin-bottom: 30px
++r(1023)
+	.youtuben
+		flex-wrap: wrap
+		align-items: center
+		justify-content: space-around
+	.video__reviews
+		margin-top: 40px
++r(767)
+	.audio-reviews-items
+		max-width: 337px
+	.audio-reviews-item
+		lost-column: 1/1 4 0px
++r(340)
+	.riviews-audio .audio-reviews-item .audiojs .scrubber
+		max-width: 164px
+	.audio-reviews-item
+		&:before
+			max-width: 162px
