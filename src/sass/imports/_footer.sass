@@ -1,0 +1,42 @@
+.footer
+	padding-top: 165px
+	padding-bottom: 70px
+	color: #949494
+	font-size: 16px
+	font-weight: 400
+	line-height: 1.5
+	+r(1200)
+		padding-top: 100px
+		padding-bottom: 40px
+	+r(1023)
+		padding: 30px 0
+		font-size: 15px
+	.orange
+		font-weight: 600
+	&__left
+		display: flex
+		align-items: center
+		text-align: left
+		+r(767)
+			margin-bottom: 10px
+	&__logo
+		size: 55px
+		margin-right: 20px
+		img
+
+			max-width: 100%
+	&-inner
+		display: flex
+		align-items: center
+		justify-content: space-between
+		+r(767)
+			flex-direction: column
+ 	&__center
+		text-align: center
+		a:hover
+			text-decoration: underline!important
+
+	&__right
+		text-align: right
+		+r(767)
+			display: none

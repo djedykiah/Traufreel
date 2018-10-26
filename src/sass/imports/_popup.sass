@@ -1,0 +1,49 @@
+.ever-popup__close
+	display: none!important
+.popup
+	width: 750px
+	background: url(../img/popup-bg.jpg)
+	border-radius:
+	+r(1000)
+		width: 270px
+
+	.form
+		box-shadow: none
+		padding: 55px 50px 50px 50px
+		width: 330px
+		margin-left: auto
+		border-radius: 8px
+		+r(1000)
+			width: 270px
+			padding: 31px 22px 38px
+		&:after
+			right: -35px
+	&__product
+		position: absolute
+		bottom: -105px
+		left: 40px
+
+	&__hero
+		position: absolute
+		width: 444px
+		height: 625px
+		background: url(../img/popup-hero.png) no-repeat
+		top: 16px
+	.hero__center
+		+r(1023)
+			top: auto
+			bottom: -105px
+			left: 70px
+
+.ever-popup
+	background: rgba(228, 231, 239, 0.9)!important
++r(1000)
+	.popup__left
+		display: none
+	.plashka
+		right: -33px
++r(479)
+	.popup .form
+		padding-top: 50px
+
+

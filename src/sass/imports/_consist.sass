@@ -1,1 +1,124 @@
 
+.consist
+	padding: 105px 0
+	background-color: #f0f1f7
+	.order_btn
+		width: 264px
+		height: 65px
+		margin: 0 auto
+		display: block
+.consist__prod
+	position: relative
+	z-index: 2
+	max-width: 440px
+	margin-right: 65px
+	img
+		max-width: 100%
+		display: block
+	.capsule
+		position: absolute
+		bottom: -10px
+		left: -45px
+		z-index: 3
+		max-width: 31.941031941031941%
+		img
+			max-width: 100%
+			display: block
+	.line-white
+		position: absolute
+		bottom: 0
+		left: -25px
+		z-index: -1
+		img
+			max-width: 100%
+			display: block
+.consist-inner
+	display: flex
+	align-items: center
+	margin-bottom: 70px
+	margin-top: 60px
+.consist__element-item
+	display: flex
+	align-items: center
+
+.element__img
+	max-width: 100px
+	margin-right: 20px
+.los
+	position: relative
+
+	&:before
+		content: ''
+		position: absolute
+		width: 103px
+		height: 52px
+		background: url(../img/horns.png) no-repeat center
+		top: -15px
+		left: -37px
+
+.element
+	max-width: 150px
+	margin-right: 36px
+	color: #2c2f35
+	font-size: 22px
+	font-weight: 900
+	line-height: 1.2
+.elementdo
+	max-width: 355px
+	color: #4b587f
+	font-size: 18px
+	font-weight: 400
+	line-height: 1.33
+.element-head
+	display: flex
+	align-items: center
++r(1200)
+	.consist__prod
+		margin-right: 20px
+		margin-left: 10px
+	.consist-inner
+		justify-content: space-around
+	.element
+		font-size: 20px
+		margin-right: 20px
+		min-width: 140px
+	.elementdo
+		font-size: 16px
+
++r(1023)
+	.consist__element-item
+		flex-wrap: wrap
+		max-width: 420px
+		margin-bottom: 30px
+	.element
+		margin-right: 0
+		max-width: 100%
+		br
+			display: none
+	.consist-inner
+		margin-top: 40px
+		margin-bottom: 40px
++r(767)
+	.consist-inner
+		flex-direction: column-reverse
+	.consist__prod
+		max-width: 370px
+	.elementdo
+		max-width: 100%
++r(560)
+	.element-head
+		flex-direction: column
+		width: 100%
+	.element__img
+		margin-right: 0
+	.element
+		text-align: center
+		margin-bottom: 10px
+	.elementdo
+		text-align: center
+		br
+			display: none
+	.consist__prod
+		margin-right: 0
+		margin-left: 20px
+
