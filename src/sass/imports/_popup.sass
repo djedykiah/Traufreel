@@ -29,6 +29,8 @@
 		height: 625px
 		background: url(../img/popup-hero.png) no-repeat
 		top: 16px
+		display: none
+
 	.hero__center
 		+r(1023)
 			top: auto
@@ -47,3 +49,6 @@
 		padding-top: 50px
 
 
+.popup__hero
+	&.show
+		display: block

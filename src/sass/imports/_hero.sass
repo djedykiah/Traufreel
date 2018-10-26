@@ -27,7 +27,9 @@
 	display: flex
 	justify-content: space-between
 	align-items: center
-	margin-right: 45px
+	margin-right: 43px
+	position: relative
+	top: -4px
 	&:last-child
 		margin-right: 0
 .list__item__img
@@ -273,7 +275,7 @@
 	border-radius: 33px
 	box-shadow: 0px 16px 26px -13px #f1ad36, 0px 6px 0px -3px #e46322
 	margin-bottom: 30px
-	
+
 	&:hover
 		box-shadow:  0px 6px 0px -3px #e46322
 	&:active, &:focus
@@ -306,18 +308,19 @@
 		display: block
 	.capsule
 		position: absolute
-		bottom: 20px
+		bottom: 0px
 		left: -60px
 		z-index: 3
-		max-width: 31.941031941031941%
+		max-width: 34%
 		img
 			max-width: 100%
 			display: block
 	.line-white
 		position: absolute
 		bottom: 0
-		left: -25px
+		left: -50px
 		z-index: -1
+		min-width: 120%
 		img
 			max-width: 100%
 			display: block
@@ -349,7 +352,7 @@
 		width: 100%
 		height: 84px
 		background: url(../img/hero-bottom.png) no-repeat center/cover
-		bottom: -7px
+		bottom: -11px
 		left: 0
 
 
@@ -357,7 +360,7 @@
 	.hero:before
 		left: calc(50% - 220px)
 		width: 580px
-		height: 605px
+		height: 615px
 		background-size: cover
 		top: auto
 		bottom: -30px
@@ -425,8 +428,10 @@
 		margin-top: 30px
 	.hero:after
 		background-size: cover
-		background-position: center
-		bottom: 0px
+		background-position: 50%
+		bottom: -20px
+
+
 +r(767)
 	.header
 		padding-top: 20px
@@ -451,6 +456,13 @@
 		padding-right: 0
 	.hero__undertitle
 		margin-bottom: 1.2em
+	.hero
+		background-size: 100% 100%
+	.hero:after
+		background-size: cover
+		background-position: center
+		bottom: -11px
+		height: 50px
 +r(479)
 	.hero__center
 		width: 310px
@@ -464,3 +476,16 @@
 		top: -40px
 	.form
 		padding-top: 50px
+
+
+.hero--last
+	padding-top: 20px
+	background-size: 100% 750px
+	&:before
+		top: 105px
+	&:after
+		bottom: -10px
+	.hero__center
+		left: -20px
+		+r(1023)
+			left: 0

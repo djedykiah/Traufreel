@@ -2,11 +2,28 @@
 	lost-flex-container: row
 	position: relative
 	margin-top: 50px
+	padding: 0 20px
+
 .order
 	padding-top: 90px
 	padding-bottom: 120px
+	position: relative
+	&:after
+		background-image: url("../img/order-after.png")
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		content: ""
+		position: absolute
+		height: 100px
+		width: 100%
+		left: 0
+		bottom: -30px
+		z-index: 4
+		+r(1023)
+			height: 50px
+			background-size: cover
 	&__item
-		lost-column: 1/3 3 90px
+		lost-column: 1/3 3 85px
 		text-align: center
 		+r(1023)
 			lost-column: 1/3 3 15px
@@ -32,6 +49,7 @@
 		font-size: 22px
 		line-height: 1.36
 		margin-bottom: 0.5em
+		background: url(../img/line-grey.png) no-repeat center
 	&__text
 		color: #4b587f
 		font-size: 17px
@@ -41,7 +59,7 @@
 
 		position: absolute
 		+center(v)
-		right: -100px
+		right: -90px
 		width: 30px
 		height: 52px
 		background: url(../img/tri.svg) no-repeat
@@ -76,7 +94,7 @@
 		margin-right: auto
 		margin-top: 30px
 	.order .tri
-		right: -75px
+		right: -65px
 	.order__img
 		margin-bottom: 40px
 	.order__title

@@ -54,3 +54,8 @@ $(function() {
 
 
 });
+
+
+$(window).on('load', function() {
+  $('.popup__hero').addClass('show');
+});

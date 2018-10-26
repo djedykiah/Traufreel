@@ -1,3 +1,6 @@
+.reviews
+	padding: 110px
+	padding-bottom: 160px
 .for-reviews-slick__next,
 .for-reviews-slick__prev
 	position: absolute
@@ -53,7 +56,7 @@
 			transform: rotate(-45deg)
 		&:hover
 			&:after
-				border-color: transparent transparent transparent #f78c26		
+				border-color: transparent transparent transparent #f78c26
 	&-slick__prev
 		right: inherit
 		left: -29px !important
@@ -90,6 +93,8 @@
 		&__box
 			margin-top: 50px
 			position: relative
+			+r(1023)
+				margin-top: 20px
 		&__item
 			border: 1px solid #e7eaf0
 			border-radius: 16px
@@ -102,7 +107,7 @@
 			min-height: 350px
 		&__item2,
 		.reviews-slider__item3,
-		.reviews-slider__item7 
+		.reviews-slider__item7
 			.reviews-button__box
 				display: none
 			.reviews-slider__text
@@ -226,10 +231,10 @@
 			.reviews-slider__item3,
 			.reviews-slider__item7
 				.reviews-button__box
-					display: block 
+					display: block
 				.reviews-slider__text
 					&:after
-						display: block 
+						display: block
 			&__content
 				br
 					display: none
@@ -239,17 +244,19 @@
 		&-slider
 			.reviews-slider__item2
 				.reviews-button__box
-					display: block 
+					display: block
 				.reviews-slider__text
 					&:after
 						display: block
 			&__content
-				padding: 30px 20px 
+				padding: 30px 20px
 			&__title
 				font-size: 19px
 		.reviews-slider__img
 				width: 45%
-
++r(1023)
+	.reviews .slick-dots
+		bottom: -25px
 +r(991)
 	.reviews
 		&-slider__item
@@ -262,13 +269,13 @@
 		&-slider__text
 			height: 80px
 		.slick-dots
-			bottom: -35px
+			bottom: -20px
 
 +r(767)
 	.reviews
 		&-slider
 			&__img
-				&.double-img 
+				&.double-img
 					.text
 						margin-top: 10px
 		.slick-dots
@@ -277,7 +284,7 @@
 +r(639)
 	.reviews
 		&-slider
-			&__img 
+			&__img
 				.main-img
 					max-width: 200px
 			&__content
@@ -301,7 +308,7 @@
 	.for-reviews-slick__next
 		left: inherit
 		right: 20px
-	.reviews-slick__next, 
+	.reviews-slick__next,
 	.reviews-slick__prev
 		z-index: 8
 		top: 230px
@@ -316,7 +323,7 @@
 			&__img
 				.main-img
 					max-width: 140px
-				&.double-img 
+				&.double-img
 					.double-img__item:nth-child(2)
 						margin-left: 5px
 			&__content

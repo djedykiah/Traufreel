@@ -24,8 +24,7 @@ body
 .container
 	position: relative
 	margin: 0 auto
-span
-	display: inline
+
 a
 	color: inherit
 	font-family: inherit
@@ -52,12 +51,15 @@ a
 		+r(767)
 			font-size: 30px
 			line-height: 1.1
+		+r(500)
+			br
+				display: none
 
 	.section__undertitle
 		color: #4c597f
 		font-size: 38px
 		font-weight: 300
-		line-height: 1.15
+		line-height: 1.1
 		text-align: center
 		margin-top: 15px
 		+r(1200)
@@ -78,11 +80,11 @@ section.section
 	+r(1200)
 		padding: 60px 0
 	+r(1023)
-		padding: 40px 0
+		padding: 60px 0 40px
 	+r(767)
-		padding: 30px 0
+		padding: 60px 0 40px
 	+r(479)
-		padding: 25px 0
+		padding: 50px 0 30px
 
 
 @lost gutter 60px
