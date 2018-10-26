@@ -25,8 +25,8 @@ gulp.task('copy:audio', function () {
 });
 gulp.task('copy:localization', function () {
   return gulp
-      .src(config.src.audio + '/**/*.*')
-      .pipe(gulp.dest(config.dest.audio));
+      .src(config.src.localization + '/**/*.*')
+      .pipe(gulp.dest(config.dest.localization));
 });
 
 gulp.task('copy:rootfiles', function () {
