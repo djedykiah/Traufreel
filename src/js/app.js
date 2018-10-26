@@ -52,6 +52,10 @@ $(function() {
       $(".reviews-slider__active").removeClass("reviews-slider__active")
   });
 
+  if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0)
+  {
+    document.getElementsByTagName("BODY")[0].className += " safari";
+  }
 
 });
 
@@ -59,3 +63,4 @@ $(function() {
 $(window).on('load', function() {
   $('.popup__hero').addClass('show');
 });
+

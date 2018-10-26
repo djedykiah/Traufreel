@@ -297,7 +297,7 @@
 
 .hero__center
 	position: relative
-	z-index: 2
+	z-index: 3
 	align-self: flex-end
 	max-width: 410px
 	bottom: -187px
@@ -342,7 +342,7 @@
 		background: url(../img/hero.png) no-repeat center
 		top: 88px
 		left: calc(50% - 180px)
-		z-index: 3
+		z-index: 2
 
 
 
@@ -354,6 +354,8 @@
 		background: url(../img/hero-bottom.png) no-repeat center/cover
 		bottom: -11px
 		left: 0
+		z-index: 1
+
 
 
 +r(1170)
@@ -489,3 +491,14 @@
 		left: -20px
 		+r(1023)
 			left: 0
+
+body.safari
+	.hero
+		&:after
+			bottom: 3px
+	.hero--last
+		&:after
+			bottom: 4px
+	.popup__hero
+		top: 25px
+		left: -2px
