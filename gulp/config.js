@@ -28,7 +28,8 @@ var config = {
         fonts        : 'src/fonts',
         lib          : 'src/lib',
         data         : 'src/data',
-        audio        : 'src/audio'
+        audio        : 'src/audio',
+        localization : 'src/localization'
     },
     dest: {
         root : destPath,
@@ -39,7 +40,8 @@ var config = {
         fonts: destPath + '/fonts',
         lib  : destPath + '/lib',
         data : destPath + '/data',
-        audio : destPath + '/audio'
+        audio : destPath + '/audio',
+        localization : destPath + '/localization'
 
     },
 

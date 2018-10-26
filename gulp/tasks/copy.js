@@ -23,6 +23,11 @@ gulp.task('copy:audio', function () {
       .src(config.src.audio + '/**/*.*')
       .pipe(gulp.dest(config.dest.audio));
 });
+gulp.task('copy:localization', function () {
+  return gulp
+      .src(config.src.audio + '/**/*.*')
+      .pipe(gulp.dest(config.dest.audio));
+});
 
 gulp.task('copy:rootfiles', function () {
     return gulp
@@ -33,7 +38,7 @@ gulp.task('copy:rootfiles', function () {
 gulp.task('copy:img', function () {
     return gulp
         .src([
-            config.src.img + '/**/*.{jpg,png,jpeg,svg,gif}',
+            config.src.img + '/**/*.{jpg,png,jpeg,svg,ico,gif}',
             '!' + config.src.img + '/svgo/**/*.*'
         ])
         .pipe(gulp.dest(config.dest.img));
@@ -42,6 +47,7 @@ gulp.task('copy:img', function () {
 gulp.task('copy', [
     'copy:img',
     'copy:audio',
+    'copy:localization',
     // 'copy:rootfiles',
     // 'copy:lib',
     // 'copy:data',
