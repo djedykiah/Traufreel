@@ -43,6 +43,17 @@ $(function() {
 			block.toggleClass("reviews-slider__active").siblings().removeClass("reviews-slider__active");
 	});
 
+  var r_click = 0;
+  $(".reviews-slider__button").on("click", function() {
+        r_click++;
+        if ( r_click == 2) {
+          $(this).attr("href", "#reviews");
+          r_click = 0;
+        } else {
+          $(this).attr("href", "");
+        }
+    });
+
 	$(".reviews-slick__prev").on("click", function () {
         $('.reviews-slider').slick("slickPrev");
         $(".reviews-slider__active").removeClass("reviews-slider__active");
@@ -58,6 +69,23 @@ $(function() {
   }
 
 });
+
+$(document).ready(function(){
+    $("#reviews").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+ 
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+ 
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+         
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+
 
 
 $(window).on('load', function() {
