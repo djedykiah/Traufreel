@@ -493,6 +493,7 @@
 		+r(1023)
 			left: 0
 
+// Do not delete this
 body.safari
 	.hero
 		&:after
@@ -518,3 +519,18 @@ body.safari
 		left: -2px
 	.popup .form:after
 		top: 170px
+
+@media all and (min--moz-device-pixel-ratio:0) and (max-width: 2560px)
+	.hero
+		&:after
+			bottom: 4px
+	.hero--last
+		&:after
+			bottom: 6px
+
+	.popup__hero
+		top: 27px
+		left: -2px
+	.popup .form:after
+		top: 170px
+//==================================================
